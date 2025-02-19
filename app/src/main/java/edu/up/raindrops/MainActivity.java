@@ -1,3 +1,6 @@
+// @author Ogochukwu Nnoli
+// February 2025
+// I used API for some of the methods
 package edu.up.raindrops;
 
 import android.graphics.Canvas;
