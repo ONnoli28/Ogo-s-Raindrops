@@ -12,38 +12,63 @@
         android:layout_gravity="center"
         android:background="#FFFFFF" />
 
-    <!-- SeekBar for vertical movement -->
-    <TextView
-        android:id="@+id/labelDown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/down" />
-    <SeekBar
-        android:id="@+id/seekBarDownUp"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="800" />
-    <TextView
-        android:id="@+id/labelUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/up" />
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
 
-    <!-- SeekBar for horizontal movement -->
-    <TextView
-        android:id="@+id/labelLeft"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/left" />
-    <SeekBar
-        android:id="@+id/seekBarLeftRight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:max="800" />
-    <TextView
-        android:id="@+id/labelRight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/right" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
 
+            <!-- SeekBar for horizontal movement -->
+            <TextView
+                android:id="@+id/labelLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/left" />
+            <SeekBar
+                android:id="@+id/seekBarLeftRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="800" />
+            <TextView
+                android:id="@+id/labelRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <!-- SeekBar for vertical movement -->
+            <TextView
+                android:id="@+id/labelUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/down" />
+            <SeekBar
+                android:id="@+id/seekBarDownUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="800" />
+            <TextView
+                android:id="@+id/labelDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/up" />
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
